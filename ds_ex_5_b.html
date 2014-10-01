@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" 		content="Epsilon, mobile, framework, css3, html5, javascript, retina" />
+<meta name="Description" 	content="Epsilon based mobile retina webpp template!" />
+<!--Favicon shortcut link-->
+<link type="image/x-icon"  rel="shortcut icon" href="images/splash/favicon.ico" />
+<link type="image/x-icon"  rel="icon"		   href="images/splash/favicon.ico" />
+<!--Declare page as mobile friendly --> 
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<!-- Declare page as iDevice WebApp friendly -->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<!-- iDevice WebApp Splash Screen, Regular Icon, iPhone, iPad, iPod Retina Icons -->
+<link rel="apple-touch-icon" sizes="114x114" href="images/splash/splash-icon.png"> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" media="screen and (max-device-width: 320px)" /> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@3x.png" sizes="640x1096">
+
+<!-- Page Title -->
+<title>Lab Manual</title>
+
+<!-- Stylesheet Load -->
+<link href="styles/style.css"				rel="stylesheet" 	type="text/css">
+<link href="styles/framework-style.css" 	rel="stylesheet" 	type="text/css">
+<link href="styles/framework.css" 			rel="stylesheet" 	type="text/css">
+<link href="styles/icons.css"				rel="stylesheet" 	type="text/css">
+<link href="styles/retina.css" 				rel="stylesheet" 	type="text/css" 	media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+
+<!--Page Scripts Load -->
+<script src="scripts/jquery.min.js"		type="text/javascript"></script>	
+<script src="scripts/jquery-ui-min.js"  type="text/javascript"></script>
+<script src="scripts/colorbox.js"		type="text/javascript"></script>
+<script src="scripts/hammer.js"			type="text/javascript"></script>	
+<script src="scripts/subscribe.js"		type="text/javascript"></script>
+<script src="scripts/contact.js"		type="text/javascript"></script>
+<script src="scripts/swipe.js"			type="text/javascript"></script>
+<script src="scripts/klass.min.js"		type="text/javascript"></script>
+<script src="scripts/photoswipe.js"		type="text/javascript"></script>
+<script src="scripts/retina.js"			type="text/javascript"></script>
+<script src="scripts/custom.js"			type="text/javascript"></script>
+<script src="scripts/framework.js"		type="text/javascript"></script>
+</head>
+
+<body>
+
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+
+<div class="header">
+	<a href="#" class="deploy-left-sidebar"></a>
+	<a href="#" class="deploy-right-sidebar"></a>
+    <a href="#" class="top-logo"><img src="images/misc/logo.png" class="replace-2x" width="125" alt="img"></a>
+</div>
+
+<div class="content-box">
+    <div class="content">
+    
+       <div class="container no-bottom">
+       		<h5 class="uppercase">EXERCISE 5(b)</h5>
+            <div class="decoration"></div>
+            <h6 class="uppercase">AIM</h6>
+            <p>Write C programs that implement Radix sort, to sort a given  list of integers in ascending order.
+ </p>
+        	<div class="decoration"></div>
+            <div class="portfolio-item-full-width">
+            <h6 class="uppercase">PROGRAM</h6>
+				<!--paste the program here -->
+                <div class="c" style="font-family:monospace;color: #006; border: 1px solid #d0d0d0; background-color: #f0f0f0;"><span style="color: #339933;">#include&lt;stdio.h&gt;</span><br />
+<span style="color: #339933;">#include&lt;conio.h&gt;</span><br />
+<br />
+radix_sort<span style="color: #009900;">&#40;</span><span style="color: #993333;">int</span> array<span style="color: #009900;">&#91;</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">,</span> <span style="color: #993333;">int</span> n<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span><br />
+<span style="color: #993333;">void</span> main<span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><br />
+<span style="color: #009900;">&#123;</span><br />
+&nbsp;<span style="color: #993333;">int</span> array<span style="color: #009900;">&#91;</span><span style="color: #0000dd;">100</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">,</span>n<span style="color: #339933;">,</span>i<span style="color: #339933;">;</span><br />
+&nbsp;<span style="color: #000066;">printf</span></a><span style="color: #009900;">&#40;</span><span style="color: #ff0000;">&quot;Enter the number of elements to be sorted: &quot;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span><br />
+&nbsp;scanf<span style="color: #009900;">&#40;</span><span style="color: #ff0000;">&quot;%d&quot;</span><span style="color: #339933;">,&amp;</span>n<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span><br />
+&nbsp;<span style="color: #000066;">printf</span></a><span style="color: #009900;">&#40;</span><span style="color: #ff0000;">&quot;<span style="color: #000099; font-weight: bold;">\n</span>Enter the elements to be sorted: <span style="color: #000099; font-weight: bold;">\n</span>&quot;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span><br />
+&nbsp;<span style="color: #b1b100;">for</span><span style="color: #009900;">&#40;</span>i <span style="color: #339933;">=</span> <span style="color: #0000dd;">0</span> <span style="color: #339933;">;</span> i <span style="color: #339933;">&lt;</span> n <span style="color: #339933;">;</span> i<span style="color: #339933;">++</span> <span style="color: #009900;">&#41;</span><br />
+&nbsp;<span style="color: #009900;">&#123;</span><br />
+&nbsp; <span style="color: #000066;">printf</span></a><span style="color: #009900;">&#40;</span><span style="color: #ff0000;">&quot;<span style="color: #000099; font-weight: bold;">\t</span>Array[%d] = &quot;</span><span style="color: #339933;">,</span>i<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span><br />
+&nbsp; scanf<span style="color: #009900;">&#40;</span><span style="color: #ff0000;">&quot;%d&quot;</span><span style="color: #339933;">,&amp;</span>array<span style="color: #009900;">&#91;</span>i<span style="color: #009900;">&#93;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span><br />
+&nbsp;<span style="color: #009900;">&#125;</span><br />
+<br />
+&nbsp;<span style="color: #000066;">printf</span></a><span style="color: #009900;">&#40;</span><span style="color: #ff0000;">&quot;<span style="color: #000099; font-weight: bold;">\n</span>Array Before Radix Sort:&quot;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> &nbsp;<span style="color: #666666; font-style: italic;">//Array Before Radix Sort</span><br />
+&nbsp;<span style="color: #b1b100;">for</span><span style="color: #009900;">&#40;</span>i <span style="color: #339933;">=</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span> i <span style="color: #339933;">&lt;</span> n<span style="color: #339933;">;</span> i<span style="color: #339933;">++</span><span style="color: #009900;">&#41;</span><br />
+&nbsp;<span style="color: #009900;">&#123;</span><br />
+&nbsp; <span style="color: #000066;">printf</span></a><span style="color: #009900;">&#40;</span><span style="color: #ff0000;">&quot;%8d&quot;</span><span style="color: #339933;">,</span> array<span style="color: #009900;">&#91;</span>i<span style="color: #009900;">&#93;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span><br />
+&nbsp;<span style="color: #009900;">&#125;</span><br />
+&nbsp;<span style="color: #000066;">printf</span></a><span style="color: #009900;">&#40;</span><span style="color: #ff0000;">&quot;<span style="color: #000099; font-weight: bold;">\n</span>&quot;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span><br />
+<br />
+&nbsp;radix_sort<span style="color: #009900;">&#40;</span>array<span style="color: #339933;">,</span>n<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span><br />
+<br />
+&nbsp;<span style="color: #000066;">printf</span></a><span style="color: #009900;">&#40;</span><span style="color: #ff0000;">&quot;<span style="color: #000099; font-weight: bold;">\n</span>Array After Radix Sort: &quot;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> &nbsp;<span style="color: #666666; font-style: italic;">//Array After Radix Sort</span><br />
+&nbsp;<span style="color: #b1b100;">for</span><span style="color: #009900;">&#40;</span>i <span style="color: #339933;">=</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span> i <span style="color: #339933;">&lt;</span> n<span style="color: #339933;">;</span> i<span style="color: #339933;">++</span><span style="color: #009900;">&#41;</span><br />
+&nbsp;<span style="color: #009900;">&#123;</span><br />
+&nbsp; <span style="color: #000066;">printf</span></a><span style="color: #009900;">&#40;</span><span style="color: #ff0000;">&quot;%8d&quot;</span><span style="color: #339933;">,</span> array<span style="color: #009900;">&#91;</span>i<span style="color: #009900;">&#93;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span><br />
+&nbsp;<span style="color: #009900;">&#125;</span><br />
+&nbsp;<span style="color: #000066;">printf</span></a><span style="color: #009900;">&#40;</span><span style="color: #ff0000;">&quot;<span style="color: #000099; font-weight: bold;">\n</span>&quot;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span><br />
+&nbsp;getch<span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span><br />
+<span style="color: #009900;">&#125;</span><br />
+<br />
+radix_sort<span style="color: #009900;">&#40;</span><span style="color: #993333;">int</span> arr<span style="color: #009900;">&#91;</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">,</span> <span style="color: #993333;">int</span> n<span style="color: #009900;">&#41;</span><br />
+<span style="color: #009900;">&#123;</span><br />
+&nbsp;<span style="color: #993333;">int</span> bucket<span style="color: #009900;">&#91;</span><span style="color: #0000dd;">10</span><span style="color: #009900;">&#93;</span><span style="color: #009900;">&#91;</span><span style="color: #0000dd;">5</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">,</span>buck<span style="color: #009900;">&#91;</span><span style="color: #0000dd;">10</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">,</span>b<span style="color: #009900;">&#91;</span><span style="color: #0000dd;">10</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">;</span><br />
+&nbsp;<span style="color: #993333;">int</span> i<span style="color: #339933;">,</span>j<span style="color: #339933;">,</span>k<span style="color: #339933;">,</span>l<span style="color: #339933;">,</span>num<span style="color: #339933;">,</span>div<span style="color: #339933;">,</span>large<span style="color: #339933;">,</span>passes<span style="color: #339933;">;</span><br />
+<br />
+&nbsp;div<span style="color: #339933;">=</span><span style="color: #0000dd;">1</span><span style="color: #339933;">;</span><br />
+&nbsp;num<span style="color: #339933;">=</span><span style="color: #0000dd;">0</span><span style="color: #339933;">;</span><br />
+&nbsp;large<span style="color: #339933;">=</span>arr<span style="color: #009900;">&#91;</span><span style="color: #0000dd;">0</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">;</span><br />
+<br />
+&nbsp;<span style="color: #b1b100;">for</span><span style="color: #009900;">&#40;</span>i<span style="color: #339933;">=</span><span style="color: #0000dd;">0</span> <span style="color: #339933;">;</span> i<span style="color: #339933;">&lt;</span>n <span style="color: #339933;">;</span> i<span style="color: #339933;">++</span><span style="color: #009900;">&#41;</span><br />
+&nbsp;<span style="color: #009900;">&#123;</span><br />
+&nbsp; <span style="color: #b1b100;">if</span><span style="color: #009900;">&#40;</span>arr<span style="color: #009900;">&#91;</span>i<span style="color: #009900;">&#93;</span> <span style="color: #339933;">&gt;</span> large<span style="color: #009900;">&#41;</span><br />
+&nbsp; &nbsp;<span style="color: #009900;">&#123;</span><br />
+&nbsp; &nbsp; large <span style="color: #339933;">=</span> arr<span style="color: #009900;">&#91;</span>i<span style="color: #009900;">&#93;</span><span style="color: #339933;">;</span><br />
+&nbsp; &nbsp;<span style="color: #009900;">&#125;</span><br />
+<br />
+&nbsp; <span style="color: #b1b100;">while</span><span style="color: #009900;">&#40;</span>large <span style="color: #339933;">&gt;</span> <span style="color: #0000dd;">0</span><span style="color: #009900;">&#41;</span><br />
+&nbsp; <span style="color: #009900;">&#123;</span><br />
+&nbsp; &nbsp;num<span style="color: #339933;">++;</span><br />
+&nbsp; &nbsp;large <span style="color: #339933;">=</span> large<span style="color: #339933;">/</span><span style="color: #0000dd;">10</span><span style="color: #339933;">;</span><br />
+&nbsp; <span style="color: #009900;">&#125;</span><br />
+<br />
+&nbsp; <span style="color: #b1b100;">for</span><span style="color: #009900;">&#40;</span>passes<span style="color: #339933;">=</span><span style="color: #0000dd;">0</span> <span style="color: #339933;">;</span> passes<span style="color: #339933;">&lt;</span>num <span style="color: #339933;">;</span> passes<span style="color: #339933;">++</span><span style="color: #009900;">&#41;</span><br />
+&nbsp; <span style="color: #009900;">&#123;</span><br />
+&nbsp; &nbsp;<span style="color: #b1b100;">for</span><span style="color: #009900;">&#40;</span>k<span style="color: #339933;">=</span><span style="color: #0000dd;">0</span> <span style="color: #339933;">;</span> k<span style="color: #339933;">&lt;</span><span style="color: #0000dd;">10</span> <span style="color: #339933;">;</span> k<span style="color: #339933;">++</span><span style="color: #009900;">&#41;</span><br />
+&nbsp; &nbsp;<span style="color: #009900;">&#123;</span><br />
+&nbsp; &nbsp; buck<span style="color: #009900;">&#91;</span>k<span style="color: #009900;">&#93;</span> <span style="color: #339933;">=</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span><br />
+&nbsp; &nbsp;<span style="color: #009900;">&#125;</span><br />
+&nbsp; &nbsp;<span style="color: #b1b100;">for</span><span style="color: #009900;">&#40;</span>i<span style="color: #339933;">=</span><span style="color: #0000dd;">0</span> <span style="color: #339933;">;</span> i<span style="color: #339933;">&lt;</span>n &nbsp;<span style="color: #339933;">;</span>i<span style="color: #339933;">++</span><span style="color: #009900;">&#41;</span><br />
+&nbsp; &nbsp;<span style="color: #009900;">&#123;</span><br />
+&nbsp; &nbsp; l <span style="color: #339933;">=</span> <span style="color: #009900;">&#40;</span><span style="color: #009900;">&#40;</span>arr<span style="color: #009900;">&#91;</span>i<span style="color: #009900;">&#93;</span><span style="color: #339933;">/</span>div<span style="color: #009900;">&#41;</span><span style="color: #339933;">%</span><span style="color:#800080;">10</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span><br />
+&nbsp; &nbsp; bucket<span style="color: #009900;">&#91;</span>l<span style="color: #009900;">&#93;</span><span style="color: #009900;">&#91;</span>buck<span style="color: #009900;">&#91;</span>l<span style="color: #009900;">&#93;</span><span style="color: #339933;">++</span><span style="color: #009900;">&#93;</span> <span style="color: #339933;">=</span> arr<span style="color: #009900;">&#91;</span>i<span style="color: #009900;">&#93;</span><span style="color: #339933;">;</span><br />
+&nbsp; &nbsp;<span style="color: #009900;">&#125;</span><br />
+<br />
+&nbsp; &nbsp;i<span style="color: #339933;">=</span><span style="color: #0000dd;">0</span><span style="color: #339933;">;</span><br />
+&nbsp; &nbsp;<span style="color: #b1b100;">for</span><span style="color: #009900;">&#40;</span>k<span style="color: #339933;">=</span><span style="color: #0000dd;">0</span> <span style="color: #339933;">;</span> k<span style="color: #339933;">&lt;</span><span style="color: #0000dd;">10</span> <span style="color: #339933;">;</span> k<span style="color: #339933;">++</span><span style="color: #009900;">&#41;</span><br />
+&nbsp; &nbsp;<span style="color: #009900;">&#123;</span><br />
+&nbsp; &nbsp; <span style="color: #b1b100;">for</span><span style="color: #009900;">&#40;</span>j<span style="color: #339933;">=</span><span style="color: #0000dd;">0</span> <span style="color: #339933;">;</span> j<span style="color: #339933;">&lt;</span>buck<span style="color: #009900;">&#91;</span>k<span style="color: #009900;">&#93;</span> <span style="color: #339933;">;</span> j<span style="color: #339933;">++</span><span style="color: #009900;">&#41;</span><br />
+&nbsp; &nbsp; <span style="color: #009900;">&#123;</span><br />
+&nbsp; &nbsp; &nbsp;arr<span style="color: #009900;">&#91;</span>i<span style="color: #339933;">++</span><span style="color: #009900;">&#93;</span> <span style="color: #339933;">=</span> bucket<span style="color: #009900;">&#91;</span>k<span style="color: #009900;">&#93;</span><span style="color: #009900;">&#91;</span>j<span style="color: #009900;">&#93;</span><span style="color: #339933;">;</span><br />
+&nbsp; &nbsp; <span style="color: #009900;">&#125;</span><br />
+&nbsp; &nbsp;<span style="color: #009900;">&#125;</span><br />
+&nbsp; &nbsp;div<span style="color: #339933;">*=</span><span style="color: #0000dd;">10</span><span style="color: #339933;">;</span><br />
+&nbsp; <span style="color: #009900;">&#125;</span><br />
+&nbsp;<span style="color: #009900;">&#125;</span><br />
+<span style="color: #009900;">&#125;</span><br />
+&nbsp;</div>
+        	</div>
+            <div class="decoration"></div>
+            <div class="decoration"></div>
+        	<div class="portfolio-item-full-width">
+            <h6 class="uppercase">OUTPUT</h6>
+				<!-- paste the output here -->
+                <div class="c" style="font-family:monospace;color: #006; border: 1px solid #d0d0d0; background-color: #f0f0f0;">Enter the number of elements to be sorted<span style="color: #339933;">:</span> <span style="color: #0000dd;">6</span><br />
+Enter the elements<span style="color: #339933;">:</span><br />
+&nbsp; &nbsp; Array<span style="color: #009900;">&#91;</span><span style="color: #0000dd;">0</span><span style="color: #009900;">&#93;</span> <span style="color: #339933;">=</span> <span style="color: #0000dd;">567</span><br />
+&nbsp; &nbsp; Array<span style="color: #009900;">&#91;</span><span style="color: #0000dd;">1</span><span style="color: #009900;">&#93;</span> <span style="color: #339933;">=</span> <span style="color: #0000dd;">345</span><br />
+&nbsp; &nbsp; Array<span style="color: #009900;">&#91;</span><span style="color: #0000dd;">2</span><span style="color: #009900;">&#93;</span> <span style="color: #339933;">=</span> <span style="color: #0000dd;">235</span><br />
+&nbsp; &nbsp; Array<span style="color: #009900;">&#91;</span><span style="color: #0000dd;">3</span><span style="color: #009900;">&#93;</span> <span style="color: #339933;">=</span> <span style="color: #0000dd;">765</span><br />
+&nbsp; &nbsp; Array<span style="color: #009900;">&#91;</span><span style="color: #0000dd;">4</span><span style="color: #009900;">&#93;</span> <span style="color: #339933;">=</span> <span style="color: #0000dd;">978</span><br />
+&nbsp; &nbsp; Array<span style="color: #009900;">&#91;</span><span style="color: #0000dd;">5</span><span style="color: #009900;">&#93;</span> <span style="color: #339933;">=</span> <span style="color: #0000dd;">123</span><br />
+Before Heapsort<span style="color: #339933;">:</span> &nbsp; <span style="color: #0000dd;">567</span> &nbsp;<span style="color: #0000dd;">345</span> &nbsp;<span style="color: #0000dd;">235</span> &nbsp;<span style="color: #0000dd;">765</span> &nbsp;<span style="color: #0000dd;">978</span> &nbsp;<span style="color: #0000dd;">123</span><br />
+After Heapsort<span style="color: #339933;">:</span> &nbsp; &nbsp;<span style="color: #0000dd;">123</span> &nbsp;<span style="color: #0000dd;">235</span> &nbsp;<span style="color: #0000dd;">345</span> &nbsp;<span style="color: #0000dd;">567</span> &nbsp;<span style="color: #0000dd;">765</span> &nbsp;<span style="color: #0000dd;">978</span></div>
+        </div>	
+
+        <div class="decoration"></div>      
+        <p class="center-text uppercase footer-text">
+            &copy; 2014. Developed by Naresh surisetty.
+        </p>
+
+    </div>
+</div>
+
+
+
+<div class="sidebar-left">
+    <div class="sidebar-scroll-left">
+        <div class="sidebar-header-left">
+            <img src="images/misc/logo-sidebar.png" class="sidebar-left-logo replace-2x" width="125" alt="img">
+            <a href="#" class="close-sidebar-left"></a>
+        </div>
+        <div class="sidebar-bottom-controls">
+            <a href="#">
+                <em class="twitter-bottom"></em>
+                <p>Twitter</p>
+            </a>
+            <a href="#">
+                <em class="facebook-bottom"></em>
+                <p>Facebook</p>
+            </a>
+            <a href="#">
+                <em class="close-bottom-left"></em>
+                <p>Collapse</p>
+            </a>
+            <div class="clear"></div>
+        </div>
+        <p class="sidebar-divider-text">  NAVIGATION </p>
+        
+        <a href="index.html" class="nav-item home-nav">HOMEPAGE<em class="icon-page"></em></a>
+        <a href="#" class="nav-item home-nav">C LAB<em class="icon-page"></em></a>
+        <a href="#" class="nav-item home-nav">C++ LAB<em class="icon-page"></em></a>
+        <a href="ds_ex_1.html" class="nav-item home-nav">DS LAB<em class="icon-page"></em></a>
+        <a href="#" class="nav-item home-nav">ADS LAB<em class="icon-page"></em></a>
+        <a href="#" class="nav-item home-nav">JAVA LAB<em class="icon-page"></em></a>
+        <a href="#" class="nav-item home-nav">AJWT LAB<em class="icon-page"></em></a>
+        <a href="#" class="nav-item home-nav">UNIX LAB<em class="icon-page"></em></a>
+        <a href="#" class="nav-item home-nav">OS/CD LAB<em class="icon-page"></em></a>
+        <a href="#" class="nav-item home-nav">MC LAB<em class="icon-page"></em></a>
+        
+        <div class="sidebar-decoration"></div>
+        <p class="copyright-sidebar">&copy; 2014. Developed by Naresh Surisetty.</p>
+        
+    </div>
+</div>
+
+<div class="sidebar-right">
+	<div class="sidebar-scroll-right">
+    	<div class="sidebar-header-right">
+        	<a href="#" class="close-sidebar-right"></a>
+			<img src="images/misc/logo-sidebar.png" class="sidebar-right-logo replace-2x" width="125" alt="img">
+    	</div>
+        
+        <p class="sidebar-divider-text">DS LAB</p>
+        
+        
+        <a href="ds_ex_1.html" class="nav-item">Exercise 1<em class="icon-page"></em></a>
+        <a href="ds_ex_2_a.html" class="nav-item">Exercise 2(a)<em class="icon-page"></em></a>
+        <a href="ds_ex_2_b.html" class="nav-item">Exercise 2(b)<em class="icon-page"></em></a>
+        <a href="ds_ex_2_c.html" class="nav-item">Exercise 2(c)<em class="icon-page"></em></a>
+        <a href="ds_ex_3_a.html" class="nav-item">Exercise 3(a)<em class="icon-page"></em></a>
+        <a href="ds_ex_3_b.html" class="nav-item">Exercise 3(b)<em class="icon-page"></em></a>
+        <a href="ds_ex_3_c.html" class="nav-item">Exercise 3(c)<em class="icon-page"></em></a>
+        <a href="ds_ex_4_a.html" class="nav-item">Exercise 4(a)<em class="icon-page"></em></a>
+        <a href="ds_ex_4_b.html" class="nav-item">Exercise 4(b)<em class="icon-page"></em></a>
+        <a href="ds_ex_4_c.html" class="nav-item">Exercise 4(c)<em class="icon-page"></em></a>
+        <a href="ds_ex_5_a.html" class="nav-item">Exercise 5(a)<em class="icon-page"></em></a>
+        <a href="ds_ex_5_b.html" class="nav-item">Exercise 5(b)<em class="icon-page"></em></a>
+        <a href="ds_ex_5_c.html" class="nav-item">Exercise 5(c)<em class="icon-page"></em></a>
+        <a href="ds_ex_6_a.html" class="nav-item">Exercise 6(a)<em class="icon-page"></em></a>
+        <a href="ds_ex_6_b.html" class="nav-item">Exercise 6(b)<em class="icon-page"></em></a>
+        <a href="ds_ex_7_a.html" class="nav-item">Exercise 7(a)<em class="icon-page"></em></a>
+        <a href="ds_ex_7_b.html" class="nav-item">Exercise 7(b)<em class="icon-page"></em></a>
+        <a href="ds_ex_7_c.html" class="nav-item">Exercise 7(c)<em class="icon-page"></em></a>
+        <a href="ds_ex_8_a_b_c.html" class="nav-item">Exercise 8(a)(b)(c)<em class="icon-page"></em></a>
+        <a href="ds_ex_9_a.html" class="nav-item">Exercise 9(a)<em class="icon-page"></em></a>
+        <a href="ds_ex_9_b.html" class="nav-item">Exercise 9(b)<em class="icon-page"></em></a>
+        <a href="ds_ex_9_c.html" class="nav-item">Exercise 9(c)<em class="icon-page"></em></a>
+        <a href="ds_ex_9_d.html" class="nav-item">Exercise 9(d)<em class="icon-page"></em></a>
+        <a href="ds_ex_10_a_b.html" class="nav-item">Exercise 10(a)(b)<em class="icon-page"></em></a>
+        <a href="ds_ex_11_a.html" class="nav-item">Exercise 11(a)<em class="icon-page"></em></a>
+        <a href="ds_ex_11_b_c.html" class="nav-item">Exercise 11(b)(c)<em class="icon-page"></em></a>
+        
+        <p class="copyright-sidebar right-sidebar-copyright">&copy; 2014. Developed by Naresh Surisetty</p>
+        
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
+
+
+
